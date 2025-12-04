@@ -402,3 +402,687 @@ footer {
     object-fit: cover; 
     object-position: center;
 }
+
+
+/* === PORTFOLIO PAGE STYLES === */
+
+/* Portfolio Header */
+.portfolio-header {
+    margin-bottom: 40px;
+}
+
+/* Portfolio Filters */
+.portfolio-filters {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 2px solid #00008b;
+    color: #00008b;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #00008b;
+    color: #fff;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.project-image-placeholder {
+    width: 100%;
+    height: 250px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.project-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    color: #00008b;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.tag {
+    padding: 5px 12px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 0.85em;
+    border-radius: 3px;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-link {
+    color: #00008b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Case Study Section */
+.case-study {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.section-heading {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #00008b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.case-study-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.case-study-text {
+    flex: 2;
+}
+
+.case-study-text h3 {
+    color: #00008b;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.case-study-text p {
+    margin-bottom: 15px;
+}
+
+.case-study-image {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.case-study-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* === SERVICES PAGE STYLES === */
+
+.services-header {
+    margin-bottom: 40px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.service-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #00008b;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.service-features {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-features li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.service-features li::before {
+    content: "✓";
+    color: #00008b;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Process Section */
+.process-section {
+    margin-bottom: 60px;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.process-step {
+    text-align: center;
+}
+
+.step-number {
+    font-size: 3em;
+    font-weight: 700;
+    color: #00008b;
+    opacity: 0.3;
+    margin-bottom: 10px;
+}
+
+.process-step h3 {
+    color: #00008b;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    margin-bottom: 60px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-left: 4px solid #00008b;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #00008b;
+}
+
+
+/* === RESUME PAGE STYLES === */
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resume-download {
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00008b;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.download-btn:hover {
+    background-color: #000066;
+}
+
+.resume-summary {
+    margin-bottom: 40px;
+}
+
+.resume-section-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #00008b;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00008b;
+}
+
+/* Skills Grid */
+.resume-skills {
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill-category h4 {
+    color: #00008b;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skills-list li::before {
+    content: "▸";
+    color: #00008b;
+    position: absolute;
+    left: 0;
+}
+
+/* Experience Section */
+.resume-experience {
+    margin-bottom: 40px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.experience-header h4 {
+    color: #00008b;
+    font-size: 1.2em;
+}
+
+.experience-date {
+    color: #888;
+    font-style: italic;
+}
+
+.experience-company {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.experience-details {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.experience-details li {
+    padding: 5px 0;
+    position: relative;
+}
+
+.experience-details li::before {
+    content: "•";
+    color: #00008b;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+}
+
+/* Education Section */
+.resume-education {
+    margin-bottom: 40px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.education-header h4 {
+    color: #00008b;
+    font-size: 1.2em;
+}
+
+.education-date {
+    color: #888;
+    font-style: italic;
+}
+
+.education-institution {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.education-details {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.education-details li {
+    padding: 5px 0;
+    position: relative;
+}
+
+.education-details li::before {
+    content: "•";
+    color: #00008b;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+}
+
+/* Certifications */
+.resume-certifications {
+    margin-bottom: 40px;
+}
+
+.certifications-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.certifications-list li {
+    margin-bottom: 20px;
+}
+
+.certifications-list strong {
+    color: #00008b;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Awards */
+.resume-awards {
+    margin-bottom: 40px;
+}
+
+.awards-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.awards-list li {
+    margin-bottom: 20px;
+}
+
+.awards-list strong {
+    color: #00008b;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Resume CTA */
+.resume-cta {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.resume-cta h3 {
+    color: #00008b;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00008b;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #000066;
+}
+
+
+/* === CONTACT PAGE STYLES === */
+
+.contact-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Contact Info Grid */
+.contact-info-main {
+    margin-bottom: 60px;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-card .contact-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #00008b;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    margin: 0;
+}
+
+.contact-card a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #00008b;
+    text-decoration: underline;
+}
+
+/* Social Media Section */
+.social-media-main {
+    margin-bottom: 60px;
+}
+
+.social-media-main .section-heading {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #00008b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.social-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #00008b;
+    color: #fff;
+}
+
+.social-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Availability Section */
+.availability-section {
+    margin-bottom: 40px;
+}
+
+.availability-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #00008b;
+}
+
+.availability-card h3 {
+    color: #00008b;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.availability-card p {
+    color: #555;
+    margin: 0;
+}
+
+
+/* === RESPONSIVE DESIGN === */
+
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .navbar nav ul li {
+        margin-left: 0;
+    }
+    
+    /* Content padding */
+    .content {
+        padding: 30px 20px;
+    }
+    
+    footer {
+        padding: 20px;
+    }
+    
+    /* Grid adjustments */
+    .portfolio-grid,
+    .services-grid,
+    .process-steps,
+    .testimonials-grid,
+    .skills-grid,
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Case study */
+    .case-study-content {
+        flex-direction: column;
+    }
+    
+    /* Bio layout on about page */
+    .main-bio-layout,
+    .details-layout {
+        flex-direction: column;
+    }
+}
