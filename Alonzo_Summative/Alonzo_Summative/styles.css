@@ -618,82 +618,6 @@ footer {
     left: 0;
 }
 
-/* Pricing Section */
-.pricing-section {
-    margin-bottom: 60px;
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.pricing-card {
-    background-color: #fff;
-    border: 2px solid #ddd;
-    padding: 30px;
-    text-align: center;
-    position: relative;
-}
-
-.pricing-card.featured {
-    border-color: #00008b;
-    transform: scale(1.05);
-}
-
-.featured-badge {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #00008b;
-    color: #fff;
-    padding: 5px 20px;
-    font-size: 0.85em;
-    font-weight: 600;
-}
-
-.pricing-card h3 {
-    color: #00008b;
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-.price {
-    font-size: 1.2em;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.pricing-features {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 25px;
-    text-align: left;
-}
-
-.pricing-features li {
-    padding: 8px 0;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.pricing-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #00008b;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.pricing-btn:hover {
-    background-color: #000066;
-}
-
 /* Process Section */
 .process-section {
     margin-bottom: 60px;
@@ -1144,7 +1068,6 @@ footer {
     /* Grid adjustments */
     .portfolio-grid,
     .services-grid,
-    .pricing-grid,
     .process-steps,
     .testimonials-grid,
     .skills-grid,
