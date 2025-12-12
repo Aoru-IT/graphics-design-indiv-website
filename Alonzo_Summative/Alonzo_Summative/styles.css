@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* CSS Custom Properties */
+:root {
+    --ripple-size: 300px;
+    --primary-color: #00008b;
+    --primary-gradient: linear-gradient(135deg, #00008b 0%, #0000cd 100%);
+}
+
 /* Enable smooth scrolling */
 html {
     scroll-behavior: smooth;
@@ -305,6 +312,14 @@ footer {
     background-clip: text;
 }
 
+/* Fallback for browsers that don't support background-clip */
+@supports not (background-clip: text) {
+    .sub-heading {
+        color: #00008b;
+        background: none;
+    }
+}
+
 /* Main Photo Placeholder (Top Right) */
 .about-main-photo-placeholder {
     width: 100%; 
@@ -440,6 +455,14 @@ footer {
     background-clip: text;
 }
 
+/* Fallback for gradient text in portfolio header */
+@supports not (background-clip: text) {
+    .portfolio-header .sub-heading {
+        color: #00008b;
+        background: none;
+    }
+}
+
 /* Portfolio Filters */
 .portfolio-filters {
     margin-bottom: 40px;
@@ -475,7 +498,7 @@ footer {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: #00008b;
+    background: var(--primary-color);
     transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -483,8 +506,8 @@ footer {
 
 .filter-btn:hover::before,
 .filter-btn.active::before {
-    width: 300px;
-    height: 300px;
+    width: var(--ripple-size);
+    height: var(--ripple-size);
 }
 
 .filter-btn:hover,

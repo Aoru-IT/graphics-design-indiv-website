@@ -64,10 +64,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar transparency on scroll
-window.addEventListener('scroll', function() {
+// Navbar transparency on scroll with improved performance
+let ticking = false;
+let lastScrollY = 0;
+
+function updateNavbar() {
     const navbar = document.querySelector('.navbar-container');
-    if (window.scrollY > 50) {
+    if (lastScrollY > 50) {
         navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
         navbar.style.backdropFilter = 'blur(10px)';
         navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
@@ -75,5 +78,15 @@ window.addEventListener('scroll', function() {
         navbar.style.backgroundColor = 'transparent';
         navbar.style.backdropFilter = 'none';
         navbar.style.boxShadow = 'none';
+    }
+    ticking = false;
+}
+
+window.addEventListener('scroll', function() {
+    lastScrollY = window.scrollY;
+    
+    if (!ticking) {
+        window.requestAnimationFrame(updateNavbar);
+        ticking = true;
     }
 });
